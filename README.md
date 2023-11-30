@@ -6,7 +6,8 @@ For the final project of CSCI596
 # Training
 
 
-#Visualization
+# Visualization
+
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
