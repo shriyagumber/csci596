@@ -1,6 +1,6 @@
 # CSCI596
 For the final project of CSCI596- 
-Visualizing the Atomic simulation of 2D- graphitic Carbon Nitride obtained using machine learning force field
+Visualizing the Atomic simulation of C-defect modified 2D- graphitic Carbon Nitride obtained using machine learning force field
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
