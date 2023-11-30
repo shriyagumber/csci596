@@ -1,5 +1,6 @@
 # CSCI596
 For the final project of CSCI596
+Visualizing the Atomic simulation obtained using machine learning force field
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
