@@ -1,6 +1,9 @@
 # CSCI596
 For the final project of CSCI596
 
+# Classical and Machine Learning Force Fields (MLFF)
+
+# Training
 
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
