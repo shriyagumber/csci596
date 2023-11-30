@@ -6,7 +6,4 @@ Mixture Variants:
 
 https://www.youtube.com/watch?v=XHUriGTiNbc
 
-[https://www.youtube.com/watch?v=XHUriGTiNbc
-](https://www.youtube.com/watch?v=XHUriGTiNbc)
-
 
