@@ -1,7 +1,7 @@
 # CSCI596
 For the final project of CSCI596
 
-# Classical and Machine Learning Force Fields (MLFF)
+# Classical v/s Machine Learning Force Fields (MLFF)
 
 # Training
 
