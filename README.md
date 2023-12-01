@@ -24,6 +24,7 @@ Trained on a deep learning network from DeepMD package.
 
 Trajectory at every 10 ps, over the total dynamics of 1 ns:
 
+
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
