@@ -14,7 +14,7 @@ MLFF has no preconceived notion about the chemical bonds or the atomic interacti
 Narrows the gap between the accuracy of ab initio methods and the eﬃciency of classical FFs.
 
 # Training
-![correlation](https://github.com/shriyagumber/csci596/assets/84539282/b05442c4-554d-4737-b5ea-95713af83d2a)
+![correlation](https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5)
 
 
 # Visualization
