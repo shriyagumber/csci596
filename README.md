@@ -14,7 +14,9 @@ MLFF has no preconceived notion about the chemical bonds or the atomic interacti
 Narrows the gap between the accuracy of ab initio methods and the eﬃciency of classical FFs.
 
 # Training
-Dataset Information
+Dataset Information: ~30,000 data points collected from ab initio moleclar dynamics (AIMD) within the framework of density functional theory (DFT), at varied temperature: from 100K to 1200K. 
+
+30,000 data-points obtained from DFT trajectories at temperatures varying from 300K to 
 
 
 <img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
