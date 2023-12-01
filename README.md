@@ -18,6 +18,8 @@ Dataset Information: ~30,000 data points collected from ab initio moleclar dynam
 
 Trained on a deep learning network from DeepMD package. 
 
+GPU-accelerated training
+
 <img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
 
 # Visualization
