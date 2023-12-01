@@ -39,6 +39,6 @@ https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-
 
 The accuracy of DFT with the efficiency of classical force field. 
 
-The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, which would be impossible to obtain in large systems using abinitio methods. 
+The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, and to do the dynamics, trajectories over a few nanoseconds are required, which would be impossible to obtain in large systems using abinitio methods. 
 
 
