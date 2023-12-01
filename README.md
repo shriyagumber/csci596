@@ -27,7 +27,7 @@ GPU-accelerated training
 
 # Visualization
 
-Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond:
+Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond is visualized using ovito software:
 
 
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
