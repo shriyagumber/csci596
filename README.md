@@ -10,12 +10,14 @@ Force on each atom is mostly sum of bonded (bonds, angles, dihedrals) plus non-b
 Classical FFs give a reasonable description of chemical interactions, even though the quality of these simulations is ultimately limited. 
 
 In MLFF, the key conecpt is to come up with an analytical expression that relates the atomic configuration to its potential energy. 
-MLFF has no preconceived notion about the chemical bonds or the atomic interactions.. 
+MLFF has no preconceived notion about the chemical bonds or the atomic interactions.
+Narrows the gap between the accuracy of ab initio methods and the eﬃciency of classical FFs.
 
 # Training
 
 
 # Visualization
+
 
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
