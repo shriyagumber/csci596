@@ -15,8 +15,8 @@ Narrows the gap between the accuracy of ab initio methods and the eﬃciency of 
 
 # Training
 
-
-<correlation src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="100" height="100">
+![correlation](https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5)
+<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="100" height="100">
 
 # Visualization
 
