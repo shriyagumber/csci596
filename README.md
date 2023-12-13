@@ -17,6 +17,7 @@ Narrows the gap between the accuracy of ab initio methods and the eﬃciency of 
 
 # Training
 Dataset Information: ~30,000 data points collected from ab initio moleclar dynamics (AIMD) within the framework of density functional theory (DFT), at varied temperature: from 100K to 1200K. 
+The DFT calculations are done using the GGA-PBE approximation as implemented in the VASP software. 
 
 Trained on a deep learning network from DeepMD package. 
 https://github.com/deepmodeling/deepmd-kit
@@ -29,7 +30,6 @@ GPU-accelerated training
 
 Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond is visualized using ovito software:
 
-
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
@@ -37,9 +37,12 @@ https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-
 https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
 
 # Application
-
 The accuracy of DFT with the efficiency of classical force field. 
 
 The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, and to perform the charge dynamics within classical path approximation, trajectories over a few nanoseconds are required, which would be impossible to obtain in large systems using abinitio methods. 
+
+# Future Directions
+
+The force field trained from DFT data is as accurate as the data fed into it and still far from the experimental results. Here,
 
 
