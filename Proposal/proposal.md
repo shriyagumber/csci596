@@ -30,10 +30,6 @@ MLFF has no preconceived notion about the chemical bonds or the atomic interacti
 Narrows the gap between the accuracy of ab initio methods and the eﬃciency of classical FFs.
 
 
-# Application
+# Techniques to be used
 
-The accuracy of DFT with the efficiency of classical force field. 
-
-The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, and to perform the charge dynamics within classical path approximation, trajectories over a few nanoseconds are required, which would be impossible to obtain in large systems using abinitio methods. 
-
-
+# Expected Results
