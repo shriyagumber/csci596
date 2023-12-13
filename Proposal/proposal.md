@@ -29,13 +29,14 @@ Here is a brief description on the methodology:
 
 ### DiffTRe Method
 
-
-Here is a brief description of how DiffTre works
-In this methid, the parameters of a poten
+In this method, we begin with a reference potential and an initial state. A trajectory is first generated using the MLIP and K different outputs are obtained over this trajectory. 
+A loss function is defined based on the difference between the K ouputs from the MLIP and the corresponding experimental output. 
 
 $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
 $$
+
+Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the trajectory. 
 
 # Expected Results
 Based on the radial distribution function, 
