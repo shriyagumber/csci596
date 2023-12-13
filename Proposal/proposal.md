@@ -20,7 +20,8 @@ While mostly bottom-up approaches are used to train MLIPs, the parameters, howev
 # Literature
 
 ### DiffTRe Method
-\( L(\theta) = \frac{1}{K} \sum_{k=1}^{K} [\langle O_k(U_{\theta}) \rangle - \tilde{O}_k]^2 \)
-
+$$
+L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
+$$
 # Expected Results
 Based on the radial distribution function, 
