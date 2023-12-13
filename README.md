@@ -1,7 +1,7 @@
 # CSCI596
 For the final project of CSCI596- 
 1. Visualizing the molecular dynamics of C-defect modified 2D- graphitic Carbon Nitride simulated using machine learning force field. 
-2. Improvement of machine learning force field using experimental data- A proposal 
+2. Improvement of machine learning force field using experimental data- A proposal
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
