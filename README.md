@@ -17,6 +17,7 @@ Narrows the gap between the accuracy of ab initio methods and the eﬃciency of 
 
 # Training
 Dataset Information: ~30,000 data points collected from ab initio moleclar dynamics (AIMD) within the framework of density functional theory (DFT), at varied temperature: from 100K to 1200K. 
+The DFT calculations are done using the GGA-PBE approximation as implemented in the VASP software. 
 
 Trained on a deep learning network from DeepMD package. 
 https://github.com/deepmodeling/deepmd-kit
