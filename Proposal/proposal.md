@@ -14,9 +14,6 @@ The bottom-up approach in MLFF attempts to build up the force field from a detai
 #### Top-Down Approach:
 In contrast, the top-down approach in MLFF is more phenomenological. It focuses on capturing the overall behavior of molecular systems without delving deeply into the fundamental physics at play. This approach often involves training the machine learning model on empirical data or data from experimental results. The model learns to reproduce the observed macroscopic properties of the system. The top-down approach is generally more computationally efficient in terms of data generation. It can also be more flexible and adaptable to a wide range of systems, as it is not as tightly bound to the specifics of quantum mechanical calculations. The accuracy of a top-down model is generally limited by the quality of the training data. If the training data lacks certain interactions or is not representative of the true diversity of molecular behavior, the model's predictions may be less reliable.
 
-
-While bottom-up teachnique has been most wide-spread for the training of MLIPs, further improvement to these potentials is possible by re-trained to experimental data using transfer-learning. 
-
 # Literature
 ### Classical Force Field
 For a given configuration, the forces on individual atoms are calculated and newtonian equation of motion is numerically integrated at each time-step to advance the dynamics. 
