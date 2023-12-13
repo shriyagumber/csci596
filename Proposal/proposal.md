@@ -19,19 +19,23 @@ While mostly bottom-up approaches are used to train MLIPs, the parameters, howev
 
 # Literature
 
-While there has been much literature availble for training the MLIPs using the data obtained from first-principles calculations, there has been only a few studies about learning experimental results in a force field. This is due to the number of challenges that come with experimental training.
+While a considerable body of research exists on training Machine Learning Interatomic Potentials (MLIPs) using data from first-principles calculations, there have been relatively few studies on learning directly from experimental results to inform force fields. This is largely attributable to the inherent complexities associated with translating experimental observations into training datasets.
 
-In DFT data, there is a configuration and the corresponding energies and forces on every atom, while in experimnetal results, there is a statistical average over a range of snapshots, which makes training data to experiments very tricky. 
+Data from Density Functional Theory (DFT) typically includes discrete configurations, each paired with precise energies and atomic forces, providing a clear and direct foundation for training MLIPs. In contrast, experimental results often yield statistical averages across an ensemble of states or 'snapshots,' obscuring the specific atomic configurations and the exact forces at play. This difference renders the direct application of experimental data to the training of force fields a challenging task.
 
-Using the Differential trajectory re-weighting method, the parameters in a machine learning force field trained using first-principles caluclations (Eg, DFT) can be tuned based on experimental results such as radial distribution function, X-ray absorption spectrsocopy, heat capacity etc. 
+However, advanced methods such as Differential Trajectory Re-weighting offer a pathway to reconcile these differences. This technique allows for the refinement of parameters in a machine-learning force field—initially trained on first-principles data like that from DFT—to align with experimental observations. By adjusting the force field to reproduce macroscopic properties measured experimentally, such as the radial distribution function, X-ray absorption spectroscopy signatures, or heat capacities, the MLIP can be calibrated to reflect experimental realities, thereby enhancing its predictive power and relevance to real-world systems.
+
+Here is a brief description on the methodology:
 
 ### DiffTRe Method
 
 
 Here is a brief description of how DiffTre works
 In this methid, the parameters of a poten
+
 $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
 $$
+
 # Expected Results
 Based on the radial distribution function, 
