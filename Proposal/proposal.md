@@ -7,6 +7,7 @@ To surpass these constraints and enhance the accuracy of MLFFs beyond the curren
 
 # Introduction
 
+While bottom-up teachnique has been most wide-spread for the training of MLIPs, further improvement to these potentials is possible using 
 
 # Literature
 ### Classical Force Field
