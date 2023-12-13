@@ -20,6 +20,10 @@ While mostly bottom-up approaches are used to train MLIPs, the parameters, howev
 # Literature
 
 ### DiffTRe Method
+
+Using the Differential trajectory re-weighting method, the parameters in a machine learning force field trained using first-principles caluclations (Eg, DFT) can be tuned based on experimental results such as radial distribution function, X-ray absorption spectrsocopy, heat capacity etc. 
+
+In this methid, the parameters of a poten
 $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
 $$
