@@ -1,15 +1,16 @@
 # CSCI596
 For the final project of CSCI596- 
 1. Visualizing the molecular dynamics of C-defect modified 2D- graphitic Carbon Nitride simulated using machine learning force field. 
-2. Improvement of machine learning force field using experimental data- A proposal
+2. Improvement of machine learning force field (MLFF) using experimental data- A proposal
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
 ### Classical Force Field
-For a given configuration, the forces on individual atoms are calculated and newtonian equation of motion is numerically integrated at each time-step to advance the dynamics. 
-How are these forces obtained- solving the SE equation? Use post-HF methods like CCSD is too expensive. Instead, force fields are used. 
-Force on each atom is mostly sum of bonded (bonds, angles, dihedrals) plus non-bonded interactions (pairwise: LJ potential, vdW forces, electrostatics etc.).
-Classical FFs give a reasonable description of chemical interactions, even though the quality of these simulations is ultimately limited. 
+In MD simulations, the dynamics of a molecular system are studied by calculating the forces acting on each atom for a given configuration. These forces are used to integrate the Newtonian equations of motion numerically. This integration, performed at each timestep, advances the simulation, allowing us to observe how the positions and velocities of atoms evolve over time. This method enables the study of molecular behavior under various conditions, like changes in temperature or pressure.
+Ideally, the most accurate way to determine the forces on atoms in a molecular system is by solving the Schrödinger equation (SE), which is the fundamental equation of quantum mechanics. The SE provides a description of how the quantum state of a physical system changes over time.
+However, the SE cannot be solved exactly for systems larger than a few atoms due to its computational complexity. To overcome this, approximate methods are employed. These include techniques like Hartree-Fock and coupled cluster equations of motion (EOM). While these methods can provide a high level of accuracy, they are computationally expensive, especially for large systems, making them impractical for routine simulations of large biomolecules or materials.
+As a result, most MD simulations rely on force fields. A force field is a set of equations and parameters that describe the potential energy of a system as a function of the atomic positions. In a force field, the force on each atom is typically expressed as the sum of bonded interactions (involving bonds, angles, and dihedrals) and non-bonded interactions. Non-bonded interactions include pairwise potentials like the Lennard-Jones (LJ) potential for modeling van der Waals (vdW) forces and Coulomb's law for electrostatic interactions. 
+Classical force fields provide a reasonable description of chemical interactions in a wide range of systems. They are particularly effective for studying large systems over long time scales, where quantum mechanical methods are not feasible. However, the quality of simulations using classical force fields is ultimately limited. They may not capture certain quantum mechanical effects and can be less accurate in systems where electronic effects are significant.
 
 ### Machine Learning Force Fields
 In MLFF, the key conecpt is to come up with an analytical expression that relates the atomic configuration to its potential energy. 
