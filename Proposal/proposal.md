@@ -38,5 +38,7 @@ $$
 
 Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the trajectory. 
 
+
+
 # Expected Results
 Based on the radial distribution function, 
