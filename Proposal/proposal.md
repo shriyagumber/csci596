@@ -19,10 +19,16 @@ While mostly bottom-up approaches are used to train MLIPs, the parameters, howev
 
 # Literature
 
-### DiffTRe Method
+While there has been much literature availble for training the MLIPs using the data obtained from first-principles calculations, there has been only a few studies about learning experimental results in a force field. This is due to the number of challenges that come with experimental training.
+
+In DFT data, there is a configuration and the corresponding energies and forces on every atom, while in experimnetal results, there is a statistical average over a range of snapshots, which makes training data to experiments very tricky. 
 
 Using the Differential trajectory re-weighting method, the parameters in a machine learning force field trained using first-principles caluclations (Eg, DFT) can be tuned based on experimental results such as radial distribution function, X-ray absorption spectrsocopy, heat capacity etc. 
 
+### DiffTRe Method
+
+
+Here is a brief description of how DiffTre works
 In this methid, the parameters of a poten
 $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
