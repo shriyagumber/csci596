@@ -18,7 +18,7 @@ In contrast, the top-down approach in MLFF is more phenomenological. It focuses 
 While mostly bottom-up approaches are used to train MLIPs, the parameters can, however, be re-trained using the experimental results by transfer learning approach. 
 
 # Literature
-### Classical Force Field
+### DiffTRe Method
 For a given configuration, the forces on individual atoms are calculated and newtonian equation of motion is numerically integrated at each time-step to advance the dynamics. 
 How are these forces obtained- solving the SE equation? Use post-HF methods like CCSD is too expensive. Instead, force fields are used. 
 Force on each atom is mostly sum of bonded (bonds, angles, dihedrals) plus non-bonded interactions (pairwise: LJ potential, vdW forces, electrostatics etc.).
