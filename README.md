@@ -30,7 +30,6 @@ GPU-accelerated training
 
 Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond is visualized using ovito software:
 
-
 https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
 
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
@@ -42,5 +41,8 @@ https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-
 The accuracy of DFT with the efficiency of classical force field. 
 
 The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, and to perform the charge dynamics within classical path approximation, trajectories over a few nanoseconds are required, which would be impossible to obtain in large systems using abinitio methods. 
+
+# Future Directions
+
 
 
