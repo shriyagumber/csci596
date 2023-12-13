@@ -7,6 +7,14 @@ To surpass these constraints and enhance the accuracy of MLFFs beyond the curren
 
 # Introduction
 
+There are two broad categories in which MLIP training can be divided: 
+#### Bottom-Up Approach:
+The bottom-up approach in MLFF attempts to build up the force field from a detailed understanding of atomic and molecular interactions. This approach often involves using high-level quantum mechanical calculations as a reference. The machine learning model is trained on data obtained from these ab initio methods, learning to predict the potential energy and forces with quantum accuracy. The primary advantage of this approach is its accuracy. Since the model is trained on highly accurate quantum mechanical data, it can predict the behavior of molecules with a high degree of precision. The main limitation is the computational cost associated with generating the training data, as ab initio methods are resource-intensive. This approach may also struggle with generalizability to systems or states not represented in the training data.
+
+#### Top-Down Approach:
+In contrast, the top-down approach in MLFF is more phenomenological. It focuses on capturing the overall behavior of molecular systems without delving deeply into the fundamental physics at play. This approach often involves training the machine learning model on empirical data or data from experimental results. The model learns to reproduce the observed macroscopic properties of the system. The top-down approach is generally more computationally efficient in terms of data generation. It can also be more flexible and adaptable to a wide range of systems, as it is not as tightly bound to the specifics of quantum mechanical calculations. The accuracy of a top-down model is generally limited by the quality of the training data. If the training data lacks certain interactions or is not representative of the true diversity of molecular behavior, the model's predictions may be less reliable.
+
+
 While bottom-up teachnique has been most wide-spread for the training of MLIPs, further improvement to these potentials is possible by re-trained to experimental data using transfer-learning. 
 
 # Literature
