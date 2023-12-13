@@ -38,6 +38,10 @@ $$
 
 Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the trajectory. 
 
+$$
+\langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta}) \quad \text{with} \quad w_i = \frac{p_{\theta}(S_i)/\tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} p_{\theta}(S_j)/\tilde{p}_{\theta}(S_j)}
+$$
+
 
 
 # Expected Results
