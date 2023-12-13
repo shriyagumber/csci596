@@ -43,6 +43,6 @@ The photoexcitated charge decay in such systems happen over the timescale of a f
 
 # Future Directions
 
-The force field trained from DFT data is as accurate as the data fed into it and still far from the experimental results. Here,
+The force field trained from DFT data is as accurate as the data fed into it and still far from the experimental results. A proposal to improve this force field using radial distribution function is provided 
 
 
