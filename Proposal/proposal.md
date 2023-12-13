@@ -1,8 +1,7 @@
-# CSCI596
-For the final project of CSCI596- 
-Visualizing the molecular dynamics of C-defect modified 2D- graphitic Carbon Nitride simulated using machine learning force field. 
+# Goal
+The field of Machine Learning internatomic potentials has witnessed significant advancements with the evolution of various models and networks designed to train the interatomic potential for specific systems. The state-of-the-art techniques and models have reached a level of precision where the accuracy of Machine Learning Force Fields (MLFFs) closely mirrors the quality of the data used for training. This is a notable achievement, as it indicates that these models have become highly proficient in capturing and reproducing the intricate details present in the input data. However, this also highlights a current limitation: the precision of MLFFs is inherently tied to the accuracy of their training datasets.
 
-# Classical v/s Machine Learning Force Fields (MLFF)
+# Machine Learning Force Field
 
 ### Classical Force Field
 For a given configuration, the forces on individual atoms are calculated and newtonian equation of motion is numerically integrated at each time-step to advance the dynamics. 
@@ -15,26 +14,6 @@ In MLFF, the key conecpt is to come up with an analytical expression that relate
 MLFF has no preconceived notion about the chemical bonds or the atomic interactions.
 Narrows the gap between the accuracy of ab initio methods and the eﬃciency of classical FFs.
 
-# Training
-Dataset Information: ~30,000 data points collected from ab initio moleclar dynamics (AIMD) within the framework of density functional theory (DFT), at varied temperature: from 100K to 1200K. 
-
-Trained on a deep learning network from DeepMD package. 
-https://github.com/deepmodeling/deepmd-kit
-
-GPU-accelerated training
-
-<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
-
-# Visualization
-
-Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond is visualized using ovito software:
-
-
-https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-fd2dd164d675
-
-https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
-
-https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
 
 # Application
 
