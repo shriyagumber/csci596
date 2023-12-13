@@ -41,4 +41,7 @@ Each of the K outputs is calculated over an ensemble of N states or snapshots. T
 
 
 # Expected Results
-Based on the radial distribution function, 
+Based on the radial distribution function for g-C3N4, an improvement in the atomic forces calculated using MLIP is expected. 
+
+# References
+https://doi.org/10.1038/s41467-021-27241-4
