@@ -36,13 +36,18 @@ $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
 $$
 
-Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the trajectory. 
+Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the calculated trajectory. 
+The loss is reduced using a gradient descent or other similar algorithm that minimizes the loss and finds a new set of parameters: \theta
+Then the K ouputs will be calculated using the 
+
 
 $$
 \langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta}) \quad \text{with} \quad w_i = \frac{p_{\theta}(S_i)/\tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} p_{\theta}(S_j)/\tilde{p}_{\theta}(S_j)}
 $$
 
 
+# Proposal
+The RMSE value for 
 
 # Expected Results
 Based on the radial distribution function for g-C3N4, an improvement in the atomic forces calculated using MLIP is expected. 
