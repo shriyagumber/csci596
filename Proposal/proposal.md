@@ -12,14 +12,14 @@ However, it's noted that the RMSE value escalates when the model is used to pred
 
 Here, I propose to increase the quality of this trained force field using the experimental values of radial-distribution function for this specific system. Here is a detailed outline of the implementation: 
 
-Work done:
+#### Work done:
 ### 1. Training Data: 
 Ab initio molecular dynamics (AIMD) using Density Functional Theory (DFT) with the Generalized Gradient Approximation (GGA) and the Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional is used to obtain the training data. ~30,000 data points at temperatures varying from 100K to 1000K is obtained and fed into the deepMD architecture for training.
 
 ### 2. Obtaining the Trajectory
 The trajectory was acquired for both the supercell upon which the model was initially trained and larger models. This analysis aimed to assess the transferability of the force field and explore the extent of extrapolation capabilities. LAMMPS was employed to apply the trained MLIP and generate a trajectory, starting from an optimized initial structure. 
 
-Future directions:
+#### Future directions:
 ### 3. Obtain structural properties 
 
 
