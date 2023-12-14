@@ -68,9 +68,8 @@ $$
 where,
 
 $$
-w_i = \frac{p_{\theta}(S_i) / \tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} p_{\theta}(S_j) / \tilde{p}_{\theta}(S_j)}
+w_i = \frac{p_{\theta}(S_i)}{\tilde{p}_{\theta}(S_i)} \Bigg/ \sum_{j=1}^{N} \frac{p_{\theta}(S_j)}{\tilde{p}_{\theta}(S_j)}
 $$
-
 
 This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. 
 
