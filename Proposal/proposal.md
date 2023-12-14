@@ -80,7 +80,7 @@ w_i = \frac{Num}{Denom}
 $$
 
 
-This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. 
+This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. Overall, DiffTRe helps in updating the parameters of an MLIP so that it fits the experimental results better.
 
 # Expected Results
 Our objective is to meticulously calibrate the parameters of the Machine Learning Interatomic Potential (MLIP) to accurately replicate key structural properties, including the radial distribution function. Additionally, we anticipate achieving a marked reduction in the root mean square error (RMSE) of potential energies, particularly for systems of larger size than those included in the training dataset. This refinement aims to extend the predictive accuracy and transferability of MLIP to encompass a broader range of system scales
