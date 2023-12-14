@@ -65,11 +65,12 @@ $$
 \langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta})
 $$
 
-where,
+where weights is calculated using the thermodynamics perturbation theory. In Canonical ensemble, the weight of a given state/snapshot can be calculated using its boltzmann factor. Boltzmann depends on the hamiltonian (Kinetic energy + Potential energy) of a state
 
 $$
-w_i = \frac{p_{\theta}(S_i) / \tilde{p}_{\theta}(S_i)}{\sum\limits_{j=1}^{N} \frac{p_{\theta}(S_j)}{\tilde{p}_{\theta}(S_j)}}
+w_i = \frac{p_{\theta}(S_i) / \tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} \frac{p_{\theta}(S_j)}{\tilde{p}_{\theta}(S_j)}}
 $$
+
 
 This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. 
 
