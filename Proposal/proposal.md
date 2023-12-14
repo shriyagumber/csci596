@@ -58,8 +58,7 @@ L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \righ
 $$
 
 Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the calculated trajectory. 
-The loss is reduced using a gradient descent or other similar algorithm that minimizes the loss and finds a new set of parameters: \theta
-Then the K ouputs will be calculated using the 
+The loss is reduced using a gradient descent or other similar algorithm that minimizes the loss and finds a new set of parameters. The minimization algorithm finds a new set of parameters, and to define the loss for new parameter set, it is required to generate a trajectory using the new updated MLIP. However, DiffTRe method works on the approximation that instead of re-calculating trajectory, the reference trajectory can be weighted and further used for calculation of k outputs.
 
 $$
 \langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta})
