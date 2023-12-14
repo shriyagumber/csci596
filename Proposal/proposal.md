@@ -5,6 +5,21 @@ Since the majority of MLFFs are trained using data derived from Density Function
 
 To surpass these constraints and enhance the accuracy of MLFFs beyond the current threshold set by DFT, further developments are required. Here, a proposal on improvement of MLIP using experimental data is presented. Specifically, the experimental data for properties such as radial distribution function is readily available and can be utilized to improve the force field. 
 
+# Specific objectives: Step-by-step path to the goal.
+The test data presented for the Machine Learning Interatomic Potential (MLIP) in this project, specifically applied to carbon-defect modified graphitic carbon nitride (g-C3N4), exhibits a root mean square error (RMSE) of 0.7 milli-electronvolts per atom. This level of accuracy is generally considered satisfactory within the standards of the machine learning community for interatomic potentials, indicating that the model performs well for the dataset it was trained on.
+
+However, it's noted that the RMSE value escalates when the model is used to predict the dynamics of a larger system. This increase in error with system size points to a limitation in the MLIP's transferability. Essentially, it suggests that while the MLIP is adept at handling the specific type of system on which it was trained, its ability to generalize and accurately predict the properties of systems with significantly different sizes or compositions is constrained. This limitation is crucial for further development, as it indicates a need for the model to be trained on a more diverse set of structures or to incorporate mechanisms that allow it to scale more effectively to larger systems.
+
+Here, I propose to increase the quality of this trained force field using the experimental values of radial-distribution function for this specific system. Here is a detailed outline of the implementation: 
+
+Work done:
+## 1. Training Data: 
+
+DFT calculations 
+
+Future directions:
+
+
 # Introduction
 
 There are two broad categories in which MLIP training can be divided: 
