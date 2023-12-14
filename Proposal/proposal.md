@@ -61,14 +61,13 @@ Each of the K outputs is calculated over an ensemble of N states or snapshots. T
 The loss is reduced using a gradient descent or other similar algorithm that minimizes the loss and finds a new set of parameters: \theta
 Then the K ouputs will be calculated using the 
 
-
 $$
 \langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta}) \quad \text{with} \quad w_i = \frac{p_{\theta}(S_i)/\tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} p_{\theta}(S_j)/\tilde{p}_{\theta}(S_j)}
 $$
 
-
-# Proposal
-The RMSE value for 
+$$
+\langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta}) \quad \text{with} \quad w_i = \frac{p_{\theta}(S_i)/\tilde{p}_{\theta}(S_i)}{\sum_{j=1}^{N} p_{\theta}(S_j)/\tilde{p}_{\theta}(S_j)}
+$$
 
 # Expected Results
 Based on the radial distribution function for g-C3N4, an improvement in the atomic forces calculated using MLIP is expected. 
