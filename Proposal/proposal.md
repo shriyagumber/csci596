@@ -38,7 +38,7 @@ In contrast, the top-down approach in MLFF is more phenomenological. It focuses 
 
 While mostly bottom-up approaches are used to train MLIPs, the parameters, however, can be re-trained using the experimental results by transfer learning approach. 
 
-# Previous Work
+# Previous Work from Literature
 
 While a considerable body of research exists on training Machine Learning Interatomic Potentials (MLIPs) using data from first-principles calculations, there have been relatively few studies on learning directly from experimental results to inform force fields. This is largely attributable to the inherent complexities associated with translating experimental observations into training datasets.
 
@@ -84,8 +84,7 @@ $$
 This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. 
 
 # Expected Results
-Based on the radial distribution function for g-C3N4, an improvement in the atomic forces calculated using MLIP is expected. 
-Improvement in root mean square error (RMSE) for potential energy for systems larger than which the model is trained on 
+We expect to tune the parameters of MLIP so that it is able to reproduce structural properities such as radial distribution function correctly. We also expect to wintness an improvement in the RMSE in energy for systems that are of larger size than what the model is trained on. 
 
 # References
 https://doi.org/10.1038/s41467-021-27241-4
