@@ -69,6 +69,7 @@ This approximates the reuse of already calculated trajectpry using reference pot
 
 # Expected Results
 Based on the radial distribution function for g-C3N4, an improvement in the atomic forces calculated using MLIP is expected. 
+Improvement in root mean square error (RMSE) for potential energy for systems larger than which the model is trained on 
 
 # References
 https://doi.org/10.1038/s41467-021-27241-4
