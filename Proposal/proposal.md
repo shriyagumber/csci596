@@ -26,7 +26,7 @@ Calculate the structural properties of g-C_{3}N_{4} using MLIP and compare it wi
 ### 4. Tranfer Learning
 Apply the DiffTRe method (discussed below) to tune the parameters of the MLIP and further compare it with the experimental results 
 
-# Introduction
+# Background
 
 There are two broad categories in which MLIP training can be divided: 
 
@@ -38,7 +38,7 @@ In contrast, the top-down approach in MLFF is more phenomenological. It focuses 
 
 While mostly bottom-up approaches are used to train MLIPs, the parameters, however, can be re-trained using the experimental results by transfer learning approach. 
 
-# Literature
+# Previous Work
 
 While a considerable body of research exists on training Machine Learning Interatomic Potentials (MLIPs) using data from first-principles calculations, there have been relatively few studies on learning directly from experimental results to inform force fields. This is largely attributable to the inherent complexities associated with translating experimental observations into training datasets.
 
