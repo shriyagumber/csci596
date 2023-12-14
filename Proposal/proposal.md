@@ -21,7 +21,10 @@ The trajectory was acquired for both the supercell upon which the model was init
 
 #### Future directions:
 ### 3. Obtain structural properties 
+Calculate the structural properties of g-C_{3}N_{4} using MLIP and compare it with the experimental data in literature. 
 
+### 4. Tranfer Learning
+Apply the DiffTRe method (discussed below) to tune the parameters of the MLIP and further compare it with the experimental results 
 
 # Introduction
 
