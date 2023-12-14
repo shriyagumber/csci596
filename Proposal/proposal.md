@@ -50,21 +50,21 @@ Here is a brief description on the methodology:
 
 ### DiffTRe Method
 
-In this method, we begin with a reference potential and an initial state. A trajectory is first generated using the MLIP and K different outputs are obtained over this trajectory. 
-A loss function is defined based on the difference between the K ouputs from the MLIP and the corresponding experimental output. 
+This method commences with a given reference potential and a specified initial state. A trajectory is then generated utilizing the Machine Learning Interatomic Potential (MLIP), yielding K distinct outputs across the trajectory's span. To enhance the fidelity of the MLIP, a loss function is formulated, based on the difference between the K outputs along the trajectory and the corresponding experimental values. This function serves as a critical metric for calibrating the MLIP parameters to better reflect observed experimental results. The Loss function is defined as: 
 
 $$
 L(\theta) = \frac{1}{K} \sum_{k=1}^{K} \left[ \left\langle O_k(U_{\theta}) \right\rangle - \tilde{O}_k \right]^2
 $$
 
-Each of the K outputs is calculated over an ensemble of N states or snapshots. To consider decorrelated states, the snapshots are considered at every 100th or 1000th time-step from the calculated trajectory. 
-The loss is reduced using a gradient descent or other similar algorithm that minimizes the loss and finds a new set of parameters. The minimization algorithm finds a new set of parameters, and to define the loss for new parameter set, it is required to generate a trajectory using the new updated MLIP. However, DiffTRe method works on the approximation that instead of re-calculating trajectory, the reference trajectory can be weighted and further used for calculation of k outputs.
+Within this framework, the K outputs are determined across an ensemble comprising N distinct states or snapshots. To ensure the states are decorrelated, these snapshots are strategically selected at intervals—either every 100th or 1000th time-step—along the generated trajectory. Optimization is pursued through algorithms such as gradient descent, which iteratively minimizes the loss function to deduce an improved set of parameters.
+
+Notably, after finding new set of parameters, it is necessary to recalculate the trajectory with the updated MLIP to assess the loss for the new parameter set, however, the Differential Trajectory Re-weighting (DiffTRe) method introduces a pivotal approximation. It posits that instead of recalculating the entire trajectory, one can reutilize the reference trajectory by re-weighting all its states. This approach simplifies the process, allowing for the efficient evaluation of the K outputs without the computational expense of generating new trajectories after each parameter update
 
 $$
 \langle O_k(U_{\theta}) \rangle \approx \sum_{i=1}^{N} w_i O_k(S_i, U_{\theta})
 $$
 
-where weights is calculated using the thermodynamics perturbation theory. In Canonical ensemble, the weight of a given state/snapshot can be calculated using its boltzmann factor. Boltzmann depends on the hamiltonian (Kinetic energy + Potential energy) of a state
+Here, weights are calculated using the thermodynamics perturbation theory. In Canonical ensemble, the weight of a given state/snapshot can be calculated using its boltzmann factor. Boltzmann depends on the hamiltonian (Kinetic energy + Potential energy) of a state. 
 
 
 $$
