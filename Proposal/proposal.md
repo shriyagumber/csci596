@@ -84,6 +84,10 @@ $$
 w_i = \frac{e^{-\beta(U_{\theta}(S_i) - U_{\theta}(S_i))}}{\sum_{j=1}^{N} e^{-\beta(U_{\theta}(S_j) - U_{\theta}(S_j))}}
 $$
 
+$$
+w_i = \frac{e^{-\beta(U_{\theta}(S_i) - U_{\theta}(S_i))}}{\sum_{j=1}^{N} e^{-\beta(U_{\theta}(S_j) - U_{\theta}(S_j))}}
+$$
+
 This approximates the reuse of already calculated trajectpry using reference potential by weighing different states by a factor w. 
 
 # Expected Results
