@@ -46,61 +46,37 @@ To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix 
 
 ### Workflow
 
-Pipeline....:
 
-	1.	DFT Sampling (small cells)
-		- Generate reference trajectory at ab initio level of theory.
-    	- Compute hamiltonians along the trajectory 
-    
-	2.	Train ML Models
-    	- Train machine learning force field to generate long trajectories, for larger systems.
-    	- Train machine learning hamiltonian using DeepH architecture. 
-    
-	3.	Compute Non-adiabatic couplings
-    	- ML-trained with DeepH provides the Hamiltonian in atomic basis. 
-    	- The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).
-
-	$$
-	S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
-	$$
-
-    	- Using adjacent ψ(t) and ψ(t+Δt) to compute NAC. 
-
-  	4. Perform dynamics for large systems
-    
-  	5. Analyze
-     	- defect-concentration dependent recombination
-     	- nonradiative processes
-     	- exciton trapping/detrapping
-
-        ┌───────────────────────┐
-        │  DFT small-cell data  │
-        └────────────┬──────────┘
-                     ↓
-         ┌──────────────────────┐
-         │  ML Force Field      │
-         │   (DeepMD)           │
-         └────────────┬─────────┘
-                      ↓
-         ┌──────────────────────┐
-         │   ML Hamiltonian     │
-         │     (DeepH)          │
-         └────────────┬─────────┘
-                      ↓
-         ┌──────────────────────┐
-         │  Diagonalize H(t)    │
-         │  → ψ(t), ε(t)         │
-         └────────────┬─────────┘
-                      ↓
-         ┌─────────────────────────────┐
-         │  NAC via MO Overlap         │
-         │  S(t,t+Δt)=C(t) S_AO C†(t+Δt)│
-         └────────────┬────────────────┘
-                      ↓
-         ┌──────────────────────┐
-         │   ML-based NA-MD     │
-         │  (fast, scalable)    │
-         └──────────────────────┘
+        ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+        │  DFT Sampling (small cells)  																	  │ 
+		│		- Generate reference trajectory at ab initio level of theory.							  │	
+		│		- Compute hamiltonians along the trajectory 											  │
+        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+                     									  ↓
+        ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+        │  Train ML Models    																	  		  │ 
+		│		- Train machine learning force field to generate long trajectories, for larger systems.	  │	
+		│		- Train machine learning hamiltonian using DeepH architecture. 							  │
+        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+                     									  ↓
+        ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+        │  Compute Non-adiabatic couplings															  	  │ 
+		│		- ML-trained with DeepH provides the Hamiltonian in atomic basis. 	   					  │	
+		│		- The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).							  │
+        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+                      									  ↓
+        ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+        │  Perform NAMD															  	  					  │ 
+		│		- Using adjacent ψ(t) and ψ(t+Δt) to compute NAC.  	   					  			  	  │	
+		│		- Perform dynamics for large systems						  							  │
+        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+                      									  ↓
+        ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+        │  Analyze														  	  					  		  │ 
+		│		- defect-concentration dependent recombination  	   					  			  	  │	
+		│		- nonradiative processes						  							  			  │
+        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+         
 		 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
