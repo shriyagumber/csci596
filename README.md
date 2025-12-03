@@ -12,6 +12,14 @@ Quantum-classical simulation is performed to model non-adiabatic molecular dynam
 At fixed nuclear position, electronic motion is evolved using time-dependent Schrödinger equation. The following equation of motion is evolved:
 
 $$
+i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
+$$
+
+$$
+d_{ij}(R(t))=-i\hbar\langle\Phi_i | \tfrac{\partial}{\partial t} | \Phi_j\rangle
+$$
+
+$$
 d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
 \Bigg| \frac{\partial}{\partial t}
 \Bigg| \psi_j\\left(t+\frac{\Delta t}{2}\right)
