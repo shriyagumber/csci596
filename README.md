@@ -47,14 +47,35 @@ To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix 
 ### DeepH
 ML architecture for training a neural network to map atomic positions to DFT Hamiltonian matrix.
 
-- ML-trained with DeepH provides the Hamiltonian in atomic basis. 
-- The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).
+
+### Workflow
+
+Pipeline:
+	1.	DFT Sampling (small cells)
+	  -	Generate reference trajectory at ab initio level of theory.
+    - Compute hamiltonians along the trajectory 
+    
+	2.	Train ML Models
+    - Train machine learning force field to generate long trajectories, for larger systems.
+    - Train machine learning hamiltonian using DeepH architecture. 
+    
+	3.	Compute Non-adiabatic couplings
+    - ML-trained with DeepH provides the Hamiltonian in atomic basis. 
+    - The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).
 
 $$
 S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
 $$
 
-- Using adjacent ψ(t) and ψ(t+Δt) to compute NAC. 
+    - Using adjacent ψ(t) and ψ(t+Δt) to compute NAC. 
+
+  4. Perform dynamics for large systems
+    
+  6. Analyze
+     - defect-concentration dependent recombination
+     - nonradiative processes
+     - exciton trapping/detrapping
+
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
