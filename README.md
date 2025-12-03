@@ -5,7 +5,7 @@ Machine Learning Hamiltonian for C-defect modified 2D- graphitic Carbon Nitride 
 # Problem Description
 Non-adiabatic molecular dynamics requires accurate time-dependent electronic Hamiltonians, but ab initio quantum chemical calculations are often too expensive to compute at every nuclear geometry. The problem is to learn the electronic Hamiltonian—its energies, couplings, and derivative terms—using machine-learning models trained on high-quality quantum data. Once learned, this ML Hamiltonian enables fast, stable, and accurate non-adiabatic dynamics across long trajectories and high-dimensional systems.
 
-# Machine Learning Hamiltonian
+# Non-adiabatic molecular dynamics and Machine Learning Hamiltonian
 
 Quantum-classical simulation is performed to model non-adiabatic molecular dynamics. Nuclear motion is evolved classicaly with Newton's equation of motion. And electronic motion is evolved quantum mechanically.
 
