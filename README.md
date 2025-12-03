@@ -9,7 +9,7 @@ Non-adiabatic molecular dynamics requires accurate time-dependent electronic Ham
 
 Quantum-classical simulation is performed to model non-adiabatic molecular dynamics. Nuclear motion is evolved classicaly with Newton's equation of motion. And electronic motion is evolved quantum mechanically.
 
-At fixed nuclear position, electronic motion is evolved using time-dependent Schrödinger equation. The following equation of motion is evolved:
+At fixed nuclear position, electronic degree of freedom is solved using time-dependent Schrödinger equation. The following equation of motion is evolved:
 
 $$
 i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
