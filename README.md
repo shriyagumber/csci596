@@ -36,6 +36,49 @@ https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-
 
 https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
 
+# Machine Learning Hamiltonian
+$$
+d_{ij}\!\left(t+\frac{\Delta t}{2}\right)
+=
+\left\langle
+\psi_i\!\left(t+\frac{\Delta t}{2}\right)
+\Bigg|
+\frac{\partial}{\partial t}
+\Bigg|
+\psi_j\!\left(t+\frac{\Delta t}{2}\right)
+\right\rangle
+\approx
+\left\langle
+\frac{\psi_i(t+\Delta t)+\psi_i(t)}{2}
+\Bigg|
+\frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t}
+\right\rangle
+\tag{4}
+$$
+
+$$
+=
+\frac{1}{2\,\Delta t}
+\left(
+\langle\psi_i(t+\Delta t)|\psi_j(t+\Delta t)\rangle
+-\langle\psi_i(t+\Delta t)|\psi_j(t)\rangle
++\langle\psi_i(t)|\psi_j(t+\Delta t)\rangle
+-\langle\psi_i(t)|\psi_j(t)\rangle
+\right)
+\tag{5}
+$$
+
+The time–overlap is calculated as:
+
+$$
+S_{\mathrm{MO}}(t_1,t_2)
+=
+C(t_1)\,
+S_{\mathrm{AO}}(t_1,t_2)\,
+C^{*}(t_2)
+\tag{6}
+$$
+
 # Application
 The accuracy of DFT with the efficiency of classical force field. 
 
