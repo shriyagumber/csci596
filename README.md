@@ -45,13 +45,16 @@ To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix e
 
 
 ### DeepH
-Training a neural network to map atomic positions → DFT Hamiltonian matrix.
+ML architecture for training a neural network to map atomic positions to DFT Hamiltonian matrix.
 
-ML-H provides the Hamiltonian → diagonalize → get MO wavefunctions ψ(t) → use adjacent ψ(t) and ψ(t+Δt) to compute NAC:
+- ML-trained with DeepH provides the Hamiltonian in atomic basis. 
+- The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).
 
 $$
 S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
 $$
+
+- Using adjacent ψ(t) and ψ(t+Δt) to compute NAC. 
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
