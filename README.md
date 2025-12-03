@@ -41,7 +41,7 @@ $$
 \right)
 $$
 
-To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales. If performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties.
+To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales if performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties, large systems are required. 
 
 
 $$
