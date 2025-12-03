@@ -41,6 +41,7 @@ $$
 \right)
 $$
 
+NA-MD needs input from time-consumingelectronic structure calculations, which limit the method to systems composed of hundredsof atoms and picosecond timescales, if performed at an ab initio level. In many cases,larger simulation models and longer simulation times are desired in order to mimic realisticprocesses
 The time-overlap is calculated as follows:
 
 $$
