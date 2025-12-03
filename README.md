@@ -15,11 +15,13 @@ $$
 i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
 $$
 
-The non-adiabatic coupling represents the electron-phonon coupling between electronic states.
+The non-adiabatic coupling represents the electron-phonon coupling between electronic states:
+
 $$
 d_{ij}(R(t))=-i\hbar\langle\Phi_i | \tfrac{\partial}{\partial t} | \Phi_j\rangle
 $$
 
+On expansion:
 $$
 d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
 \Bigg| \frac{\partial}{\partial t}
