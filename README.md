@@ -22,6 +22,7 @@ d_{ij}(R(t))=-i\hbar\langle\Phi_i | \tfrac{\partial}{\partial t} | \Phi_j\rangle
 $$
 
 On expansion:
+
 $$
 d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
 \Bigg| \frac{\partial}{\partial t}
