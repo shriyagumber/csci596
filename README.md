@@ -51,6 +51,8 @@ $$
 ### DeepH
 Training a neural network to map atomic positions → DFT Hamiltonian matrix.
 
+ML-H provides the Hamiltonian → diagonalize → get MO wavefunctions ψ(t) → use adjacent ψ(t) and ψ(t+Δt) to compute NAC:
+
 # Classical v/s Machine Learning Force Fields (MLFF)
 
 ### Classical Force Field
