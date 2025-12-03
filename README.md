@@ -1,4 +1,4 @@
-# CSCI596
+# CSCI653
 For the final project of CSCI653- 
 Machine Learning Hamiltonian for C-defect modified 2D- graphitic Carbon Nitride simulated using machine learning force field. 
 
