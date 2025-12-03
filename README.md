@@ -58,14 +58,12 @@ $$
 \right)
 $$
 
-The time–overlap is calculated as:
+The time-overlap is calculated as follows:
 
 $$
-S_{\mathrm{MO}}(t_1,t_2) =
-C(t_1)\,
-S_{\mathrm{AO}}(t_1,t_2)\,
-C^{*}(t_2)
-\tag{6}
+S_{\mathrm{MO}}(t_{1},t_{2})
+=
+C(t_{1})\, S_{\mathrm{AO}}(t_{1},t_{2})\, C^{*}(t_{2})
 $$
 
 # Application
