@@ -41,12 +41,8 @@ $$
 \right)
 $$
 
-To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve the time-consuming electronic structure calculations, which limit the method to systems composed of hundreds of atoms and picosecond timescales. If performed at an ab initio level. 
+To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales. If performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties.
 
-In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties. 
-
-needs input from time-consuming electronic structure calculations, which limit the method to systems composed of hundredsof atoms and picosecond timescales, if performed at an ab initio level. In many cases,larger simulation models and longer simulation times are desired in order to mimic realisticprocesses
-The time-overlap is calculated as follows:
 
 $$
 S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
