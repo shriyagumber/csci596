@@ -47,16 +47,11 @@ d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Del
 \Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
 $$
 
-$$
-=
-\frac{1}{2\,\Delta t}
+$$ 
+=\frac{1}{2\,\Delta t}
 \left(
-\langle \psi_i(t+\Delta t)\,|\,\psi_j(t+\Delta t)\rangle
--
-\langle \psi_i(t+\Delta t)\,|\,\psi_j(t)\rangle
-+
-\langle \psi_i(t)\,|\,\psi_j(t+\Delta t)\rangle
--
+\langle 
+\psi_i(t+\Delta t)\,|\,\psi_j(t+\Delta t)\rangle - \langle \psi_i(t+\Delta t)\,|\,\psi_j(t)\rangle + \langle \psi_i(t)\,|\,\psi_j(t+\Delta t)\rangle -
 \langle \psi_i(t)\,|\,\psi_j(t)\rangle
 \right)
 $$
