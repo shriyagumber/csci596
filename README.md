@@ -50,7 +50,7 @@ ML architecture for training a neural network to map atomic positions to DFT Ham
 
 ### Workflow
 
-Pipeline:
+Pipeline....:
 
 	1.	DFT Sampling (small cells)
 		- Generate reference trajectory at ab initio level of theory.
