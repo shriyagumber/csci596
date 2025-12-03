@@ -73,7 +73,35 @@ Pipeline....:
      	- nonradiative processes
      	- exciton trapping/detrapping
 
-
+        ┌───────────────────────┐
+        │  DFT small-cell data  │
+        └────────────┬──────────┘
+                     ↓
+         ┌──────────────────────┐
+         │  ML Force Field      │
+         │   (DeepMD)           │
+         └────────────┬─────────┘
+                      ↓
+         ┌──────────────────────┐
+         │   ML Hamiltonian     │
+         │     (DeepH)          │
+         └────────────┬─────────┘
+                      ↓
+         ┌──────────────────────┐
+         │  Diagonalize H(t)    │
+         │  → ψ(t), ε(t)         │
+         └────────────┬─────────┘
+                      ↓
+         ┌─────────────────────────────┐
+         │  NAC via MO Overlap         │
+         │  S(t,t+Δt)=C(t) S_AO C†(t+Δt)│
+         └────────────┬────────────────┘
+                      ↓
+         ┌──────────────────────┐
+         │   ML-based NA-MD     │
+         │  (fast, scalable)    │
+         └──────────────────────┘
+		 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
 ### Classical Force Field
