@@ -44,14 +44,14 @@ $$
 To perform non-adiabtic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales if performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties, large systems are required. 
 
 
-$$
-S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
-$$
-
 ### DeepH
 Training a neural network to map atomic positions → DFT Hamiltonian matrix.
 
 ML-H provides the Hamiltonian → diagonalize → get MO wavefunctions ψ(t) → use adjacent ψ(t) and ψ(t+Δt) to compute NAC:
+
+$$
+S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
+$$
 
 # Classical v/s Machine Learning Force Fields (MLFF)
 
