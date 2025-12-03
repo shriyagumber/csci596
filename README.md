@@ -5,6 +5,33 @@ Machine Learning Hamiltonian for C-defect modified 2D- graphitic Carbon Nitride 
 # Problem Description
 Non-adiabatic molecular dynamics requires accurate time-dependent electronic Hamiltonians, but ab initio quantum chemical calculations are often too expensive to compute at every nuclear geometry. The problem is to learn the electronic Hamiltonian—its energies, couplings, and derivative terms—using machine-learning models trained on high-quality quantum data. Once learned, this ML Hamiltonian enables fast, stable, and accurate non-adiabatic dynamics across long trajectories and high-dimensional systems.
 
+# Machine Learning Hamiltonian
+
+$$
+d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
+\Bigg| \frac{\partial}{\partial t}
+\Bigg| \psi_j\\left(t+\frac{\Delta t}{2}\right)
+\right\rangle
+\approx \left\langle \frac{\psi_i(t+\Delta t)+\psi_i(t)}{2}
+\Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
+$$
+
+$$ 
+=\frac{1}{2\\Delta t}
+\left(
+\langle 
+\psi_i(t+\Delta t)\|\\psi_j(t+\Delta t)\rangle - \langle \psi_i(t+\Delta t)\|\\psi_j(t)\rangle + \langle \psi_i(t)\|\\psi_j(t+\Delta t)\rangle -
+\langle \psi_i(t)\|\\psi_j(t)\rangle
+\right)
+$$
+
+The time-overlap is calculated as follows:
+
+$$
+S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
+$$
+
+
 # Classical v/s Machine Learning Force Fields (MLFF)
 
 ### Classical Force Field
@@ -37,32 +64,6 @@ https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
 
 https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
-
-# Machine Learning Hamiltonian
-
-$$
-d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
-\Bigg| \frac{\partial}{\partial t}
-\Bigg| \psi_j\\left(t+\frac{\Delta t}{2}\right)
-\right\rangle
-\approx \left\langle \frac{\psi_i(t+\Delta t)+\psi_i(t)}{2}
-\Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
-$$
-
-$$ 
-=\frac{1}{2\\Delta t}
-\left(
-\langle 
-\psi_i(t+\Delta t)\|\\psi_j(t+\Delta t)\rangle - \langle \psi_i(t+\Delta t)\|\\psi_j(t)\rangle + \langle \psi_i(t)\|\\psi_j(t+\Delta t)\rangle -
-\langle \psi_i(t)\|\\psi_j(t)\rangle
-\right)
-$$
-
-The time-overlap is calculated as follows:
-
-$$
-S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
-$$
 
 # Application
 The accuracy of DFT with the efficiency of classical force field. 
