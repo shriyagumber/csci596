@@ -61,9 +61,7 @@ $$
 The time-overlap is calculated as follows:
 
 $$
-S_{\mathrm{MO}}(t_{1},t_{2})
-=
-C(t_{1})\, S_{\mathrm{AO}}(t_{1},t_{2})\, C^{*}(t_{2})
+S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\, S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
 $$
 
 # Application
