@@ -39,23 +39,6 @@ https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-
 # Machine Learning Hamiltonian
 
 $$
-d_{ij}\!\left(t+\frac{\Delta t}{2}\right)=
-\left\langle
-\psi_i\!\left(t+\frac{\Delta t}{2}\right)
-\;\middle|\;
-\frac{\partial}{\partial t}
-\;\middle|\;
-\psi_j\!\left(t+\frac{\Delta t}{2}\right)
-\right\rangle
-\approx
-\left\langle
-\frac{\psi_i(t+\Delta t)+\psi_i(t)}{2}
-\;\middle|\;
-\frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t}
-\right\rangle
-$$
-
-$$
 d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Delta t}{2}\right)
 \Bigg| \frac{\partial}{\partial t}
 \Bigg| \psi_j\\left(t+\frac{\Delta t}{2}\right)
@@ -68,12 +51,14 @@ $$
 =
 \frac{1}{2\,\Delta t}
 \left(
-\langle\psi_i(t+\Delta t)|\psi_j(t+\Delta t)\rangle
--\langle\psi_i(t+\Delta t)|\psi_j(t)\rangle
-+\langle\psi_i(t)|\psi_j(t+\Delta t)\rangle
--\langle\psi_i(t)|\psi_j(t)\rangle
+\langle \psi_i(t+\Delta t)\,|\,\psi_j(t+\Delta t)\rangle
+-
+\langle \psi_i(t+\Delta t)\,|\,\psi_j(t)\rangle
++
+\langle \psi_i(t)\,|\,\psi_j(t+\Delta t)\rangle
+-
+\langle \psi_i(t)\,|\,\psi_j(t)\rangle
 \right)
-\tag{5}
 $$
 
 The time–overlap is calculated as:
