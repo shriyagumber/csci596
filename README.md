@@ -44,7 +44,7 @@ d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Del
 \Bigg| \psi_j\\left(t+\frac{\Delta t}{2}\right)
 \right\rangle
 \approx \left\langle \frac{\psi_i(t+\Delta t)+\psi_i(t)}{2}
-\Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
+\left| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
 $$
 
 $$
