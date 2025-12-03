@@ -64,9 +64,9 @@ Pipeline:
     	- ML-trained with DeepH provides the Hamiltonian in atomic basis. 
     	- The Hamiltonian diagonalized to obtain MO wavefunctions ψ(t).
 
-		$$
-		S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
-		$$
+	$$
+	S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
+	$$
 
     	- Using adjacent ψ(t) and ψ(t+Δt) to compute NAC. 
 
